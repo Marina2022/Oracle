@@ -13,7 +13,8 @@ const RealTimePrediction = () => {
         <div className="text-sm font-bold text-secondary">НЕТ</div>
       </Card>
 
-      <Card className="flex flex-col gap-0 items-center rounded-xl border absolute -bottom-6 -left-6 glassmorphism p-4 w-36 float-animation delay-1000 z-20 shadow-none">
+      {/*<Card className="flex flex-col gap-0 items-center rounded-xl border absolute -bottom-6 -left-26 glassmorphism p-4 w-36 float-animation delay-1000 z-20 shadow-none">*/}
+      <Card className="flex flex-col gap-0 items-center rounded-xl border absolute md:-bottom-16 -bottom-6 -left-4 lg:left-86 glassmorphism p-4 w-36 float-animation delay-1000 z-20 shadow-none">
         <TrendingUp className="h-8 w-8 text-accent mb-2 " />
         <div className="text-xs font-medium">Точность за месяц</div>
         <div className="text-sm font-bold text-green-500">87%</div>
