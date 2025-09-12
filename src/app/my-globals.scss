@@ -39,9 +39,11 @@
     }
   }
 
-  @media (min-width: 1536px) {
+  //@media (min-width: 1536px) {
+  @media (min-width: 1440px) {
     .container {
-      max-width: 1536px;
+      //max-width: 1536px;
+      max-width: 1440px;
       padding-left: 32px;
       padding-right: 32px;
     }
