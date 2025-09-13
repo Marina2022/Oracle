@@ -126,21 +126,12 @@
     --color-sidebar-ring: var(--sidebar-ring);
 }
 
-@layer base {
-    * {
-        @apply border-border outline-ring/50;
-    }
-
-    body {
-        @apply bg-background text-foreground;
-        /*transform: scale(.875);*/
-    }
-}
 
 /**
  * Не применяется, если есть предки с классом text-....
  */
-@layer base {
+@layer utilities {
+
     :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
         h1 {
             font-size: 3rem;
@@ -194,6 +185,7 @@
 
 html {
     font-size: var(--font-size);
+    scroll-behavior: smooth !important;
 }
 
 

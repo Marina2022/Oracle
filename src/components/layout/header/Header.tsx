@@ -3,6 +3,7 @@ import ToggleTheme from './ToggleTheme';
 import UserMenu from "@/components/layout/header/UserMenu";
 import Logo from "@/components/shared/Logo";
 import ToggleLang from "@/components/layout/header/ToggleLang";
+import {Menu} from "lucide-react"
 
 const Header = async () => {
   return (
@@ -12,10 +13,10 @@ const Header = async () => {
           <Logo/>
         </Link>
         <div className="hidden lg:flex items-center space-x-10">
-          <Link href="#" className="text-foreground hover:text-primary transition-colors">
+          <Link href="#models" className="text-foreground hover:text-primary transition-colors">
             Модели ИИ
           </Link>
-          <Link href="#" className="text-foreground hover:text-primary transition-colors">
+          <Link href="#working-process" className="text-foreground hover:text-primary transition-colors">
             Как работает
           </Link>
           <Link href="#" className="text-foreground hover:text-primary transition-colors">
@@ -29,6 +30,7 @@ const Header = async () => {
           <ToggleTheme/>
           <ToggleLang/>
           <UserMenu/>
+          <Menu className="inline lg:hidden "/>
         </div>
       </div>
     </nav>
