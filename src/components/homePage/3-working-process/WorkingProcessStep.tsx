@@ -18,7 +18,7 @@ const WorkingProcessStep = ({step, index}: { step: WorkingStep, index: number })
           {
             step.list.map((item, i) => <li key={i} className="text-sm text-muted-foreground">
               <div className="space-x-3 flex items-center">
-                <div className={`w-2 h-2 bg-${step.color}/10 rounded-full`}></div>
+                <div className={`w-2 h-2 bg-${step.color}/20 rounded-full`}></div>
                 <div>{item}</div>
               </div>
             </li>)

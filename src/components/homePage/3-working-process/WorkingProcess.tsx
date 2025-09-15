@@ -27,11 +27,8 @@ const WorkingProcess = () => {
             howItWorksSteps.map((step, i) => <WorkingProcessStep key={i} step={step} index={i} />)
           }
         </ul>
-
         <TryItNow />
       </div>
-
-
     </section>
   );
 };
