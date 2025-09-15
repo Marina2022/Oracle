@@ -7,14 +7,14 @@ const RealTimePrediction = () => {
   return (
     <div className="relative">
 
-      <Card className="flex flex-col gap-0 items-center rounded-xl border absolute -top-18 sm:-top-4 -right-4 glassmorphism p-4 w-32 float-animation z-20 shadow-none">
+      <Card className="flex flex-col gap-0 items-center rounded-xl border absolute -top-18 sm:-top-4 -right-4 glassmorphism p-3 px-2 w-28 float-animation z-20 shadow-none">
         <Brain className="h-8 w-8 text-primary mb-2 " />
         <div className="text-xs font-medium">YandexGPT</div>
         <div className="text-sm font-bold text-secondary">НЕТ</div>
       </Card>
 
-      <Card className="flex flex-col gap-0 items-center rounded-xl border absolute md:-bottom-16 -bottom-22 -left-4 sm:left-86 glassmorphism p-4 w-36 float-animation delay-1000 z-20 shadow-none">
-        <TrendingUp className="h-8 w-8 text-accent mb-2 " />
+      <Card className="flex flex-col gap-0 items-center rounded-xl border absolute md:-bottom-16 -bottom-22 -left-4 sm:left-86 glassmorphism p-3 px-3 w-34 float-animation delay-1000 z-20 shadow-none">
+        <TrendingUp className="h-8 w-8 text-accent mb-1 " />
         <div className="text-xs font-medium">Точность за месяц</div>
         <div className="text-sm font-bold text-green-500">87%</div>
       </Card>

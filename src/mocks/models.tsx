@@ -41,9 +41,6 @@ const GPT4oIcon = ()=>{
   </div>
 }
 
-
-
-
 export const models = [
   {
     id: "1",
