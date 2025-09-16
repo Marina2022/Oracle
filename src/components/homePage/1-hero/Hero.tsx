@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="absolute top-40 right-20 w-32 h-32 bg-secondary/20 rounded-full blur-xl animate-pulse delay-1000"></div>
       <div className="absolute bottom-40 left-1/4 w-24 h-24 bg-accent/20 rounded-full blur-xl animate-pulse delay-2000"></div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20  sm:gap-12 xl:gap-24 items-center container pt-24 ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20  sm:gap-12 xl:gap-24 items-center container pt-22">
         <FindOutYourFuture/>
         <RealTimePrediction/>
       </div>

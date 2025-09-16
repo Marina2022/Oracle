@@ -1,7 +1,7 @@
 import React from 'react';
 import {Card} from "@/components/ui/card";
 import {ArrowRight} from "lucide-react";
-import {WorkingStep} from "@/types/workingSteps";
+import {WorkingStep} from "@/commonTypes/workingSteps";
 
 const WorkingProcessStep = ({step, index}: { step: WorkingStep, index: number }) => {
   return (

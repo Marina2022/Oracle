@@ -1,7 +1,5 @@
 import React from 'react';
 import {Badge} from "@/components/ui/badge";
-import {Card} from "@/components/ui/card";
-import {ArrowRight} from "lucide-react";
 import {howItWorksSteps} from "@/mocks/howItWorksSteps";
 import WorkingProcessStep from "@/components/homePage/3-working-process/WorkingProcessStep";
 import TryItNow from "@/components/homePage/3-working-process/TryItNow";
@@ -17,7 +15,7 @@ const WorkingProcess = () => {
           <Badge className="bg-primary/20 text-primary border-primary/30 mb-6">Простой процесс</Badge>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             Как это
-            <span className="gradient-text">работает</span>
+            <span className="gradient-text"> работает</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Три простых шага от выбора события до получения
             точного прогноза от искусственного интеллекта</p>
