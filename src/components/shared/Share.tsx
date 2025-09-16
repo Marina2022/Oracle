@@ -15,10 +15,9 @@ interface ShareMenuProps {
 const ShareMenu = ({url, text = ""}: ShareMenuProps) => {
 
   const [mounted, setMounted] = useState(false)
-  useEffect(() => setMounted(true), [])
-
-
   const [copied, setCopied] = useState(false)
+
+  useEffect(() => setMounted(true), [])
 
   const handleCopy = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.stopPropagation()
@@ -56,11 +55,10 @@ const ShareMenu = ({url, text = ""}: ShareMenuProps) => {
         console.error('Share canceled or not supported', err)
       }
     } else {
-      // fallback — можно показать те же соц-кнопки
+      // fallback
       alert('Ваш браузер не поддерживает нативный шэринг')
     }
   }
-
 
   if (!mounted) return null
 
