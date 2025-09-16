@@ -1,5 +1,5 @@
 import React from 'react';
-import {TryItNowModelType} from "@/commonTypes/tryItNowModelType";
+import {TryItNowModelType} from "@/types/tryItNowModelType";
 
 
 const TryItNowModel = ({model}:{model: TryItNowModelType}) => {

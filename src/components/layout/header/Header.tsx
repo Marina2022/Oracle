@@ -19,10 +19,10 @@ const Header = async () => {
           <Link href="#working-process" className="text-foreground hover:text-primary transition-colors">
             Как работает
           </Link>
-          <Link href="#" className="text-foreground hover:text-primary transition-colors">
+          <Link href="#predictions" className="text-foreground hover:text-primary transition-colors">
             Прогнозы
           </Link>
-          <Link href="#" className="text-foreground hover:text-primary transition-colors">
+          <Link href="#prices" className="text-foreground hover:text-primary transition-colors">
             Цены
           </Link>
         </div>

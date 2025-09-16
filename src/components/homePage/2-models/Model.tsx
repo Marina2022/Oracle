@@ -1,6 +1,6 @@
 import React from 'react';
 import {Card} from "@/components/ui/card";
-import {Model as ModelType} from "@/commonTypes/model";
+import {Model as ModelType} from "@/types/model";
 import {Progress} from "@/components/ui/progress"
 import {Badge} from "@/components/ui/badge";
 

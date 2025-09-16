@@ -3,6 +3,7 @@ import Hero from "@/components/homePage/1-hero/Hero";
 import Models from "@/components/homePage/2-models/Models";
 import WorkingProcess from "@/components/homePage/3-working-process/WorkingProcess";
 import Predictions from "@/components/homePage/4-predictions/Predictions";
+import Trust from "@/components/homePage/5-trust/Trust";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Models />
         <WorkingProcess />
         <Predictions />
+        <Trust />
       </main>
 
 
