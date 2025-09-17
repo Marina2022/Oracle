@@ -19,7 +19,7 @@ const OracleVsTraditional = () => {
   ]
 
   return (
-    <Card className=" shadow-none glassmorphism p-8 mb-12 max-w-5xl mx-auto">
+    <Card className=" shadow-none glassmorphism p-8 max-w-5xl mx-auto">
       <h3 className="text-2xl font-bold mb-4 text-center mb-8">Оракул vs Традиционные прогнозы</h3>
       <div className="grid md:grid-cols-2 gap-10 md:gap-8">
         <div>
