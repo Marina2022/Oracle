@@ -4,6 +4,7 @@ import Models from "@/components/homePage/2-models/Models";
 import WorkingProcess from "@/components/homePage/3-working-process/WorkingProcess";
 import Predictions from "@/components/homePage/4-predictions/Predictions";
 import Trust from "@/components/homePage/5-trust/Trust";
+import WhyTheyChoose from "@/components/homePage/6-whyTheyChoose/WhyTheyChoose";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <WorkingProcess />
         <Predictions />
         <Trust />
+        <WhyTheyChoose />
       </main>
 
 

@@ -2,7 +2,7 @@ import React from 'react';
 import {Badge} from "@/components/ui/badge";
 import {Card} from "@/components/ui/card";
 import {Award, Target, TrendingUp, Users} from "lucide-react";
-import { reviews } from '@/mocks/reviews';
+import {reviews} from '@/mocks/reviews';
 import Review from "@/components/homePage/5-trust/Review";
 
 const Trust = () => {
@@ -18,7 +18,6 @@ const Trust = () => {
             Растущее сообщество пользователей выбирает Оракул для получения точных прогнозов от ИИ
           </p>
         </div>
-
         <ul className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20 2xl:px-20">
           <li>
             <Card className="border glassmorphism p-8 text-center hover:scale-105 transition-all duration-300 gap-2 ">
@@ -66,18 +65,33 @@ const Trust = () => {
           </li>
 
         </ul>
-
         <div className="text-center mb-12">
           <h3 className="text-3xl font-bold mb-4">Что говорят пользователи</h3>
           <p className="text-muted-foreground">Отзывы от реальных пользователей платформы Оракул</p>
         </div>
-
         <ul className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">
           {
-            reviews.map((review, i) => <Review key={i} review={review}  />)
+            reviews.map((review, i) => <Review key={i} review={review}/>)
           }
         </ul>
+        <Card className="glassmorphism p-8">
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <div>
+              <div className="text-2xl font-bold text-secondary mb-2">99.9%</div>
+              <div className="text-sm xl:text-md text-muted-foreground">Время работы платформы</div>
+            </div>
 
+            <div>
+              <div className="text-2xl font-bold text-primary mb-2">24/7</div>
+              <div className="text-sm xl:text-md text-muted-foreground">Техническая поддержка</div>
+            </div>
+
+            <div>
+              <div className="text-2xl font-bold text-accent mb-2">100%</div>
+              <div className="text-sm xl:text-md text-muted-foreground">Безопасность данных</div>
+            </div>
+          </div>
+        </Card>
       </div>
     </section>
   );
