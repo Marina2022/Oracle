@@ -4,6 +4,9 @@ import {Card} from "@/components/ui/card";
 import BasePlan from "@/components/homePage/7-pricePlan/BasePlan";
 import ProfiPlan from "@/components/homePage/7-pricePlan/ProfiPlan";
 import TeamPlan from "@/components/homePage/7-pricePlan/TeamPlan";
+import Special from "@/components/homePage/7-pricePlan/Special";
+import Faq from "@/components/homePage/7-pricePlan/Faq";
+
 
 const PricePlan = () => {
   return (
@@ -22,12 +25,12 @@ const PricePlan = () => {
 
         <div className="grid lg:grid-cols-3 gap-10 mb-16">
           <BasePlan/>
-          <ProfiPlan />
+          <ProfiPlan/>
           <TeamPlan/>
-
         </div>
 
-
+        <Special/>
+        <Faq/>
       </div>
 
     </section>

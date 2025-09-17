@@ -7,7 +7,7 @@ const FindOutYourFuture = () => {
     <div>
       <div className="space-y-6 mb-8">
         <Badge variant="blueBig">
-          🚀 Первая в России платформа сравнения ИИ-прогнозов
+          <span className="max-sm:hidden">🚀 </span>Первая в России платформа сравнения ИИ-прогнозов
         </Badge>
 
         <h1 className="text-4xl md:text-6xl font-bold leading-tight">
@@ -40,10 +40,8 @@ const FindOutYourFuture = () => {
           <div className="text-sm text-muted-foreground">Точность консенсуса</div>
         </div>
       </div>
-
     </div>
-
-  );
-};
+  )
+}
 
 export default FindOutYourFuture;
