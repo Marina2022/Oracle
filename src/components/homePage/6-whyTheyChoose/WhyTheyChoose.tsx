@@ -1,7 +1,6 @@
 import React from 'react';
 import {Badge} from "@/components/ui/badge";
 import {whyTheyChoose} from "@/mocks/whyTheyChoose";
-import {WhyTheyChooseType} from "@/types/whyTheyChooseType";
 import WhyTheyChooseCard from "@/components/homePage/6-whyTheyChoose/WhyTheyChooseCard";
 
 const WhyTheyChoose = () => {

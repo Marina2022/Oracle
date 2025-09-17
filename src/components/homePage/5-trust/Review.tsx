@@ -46,7 +46,7 @@ const Review = ({review}: { review: ReviewType }) => {
         </div>
         <div className="relative">
           <Quote className="absolute top-0 left-0 w-8 h-8 text-muted-foreground/20"/>
-          <p className="text-sm leading-relaxed pl-10 italic">"{review.content}"</p>
+          <p className="text-sm leading-relaxed pl-10 italic">&quot;{review.content}&quot;</p>
         </div>
       </Card>
     </li>
