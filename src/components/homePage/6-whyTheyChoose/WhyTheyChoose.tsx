@@ -2,6 +2,9 @@ import React from 'react';
 import {Badge} from "@/components/ui/badge";
 import {whyTheyChoose} from "@/mocks/whyTheyChoose";
 import WhyTheyChooseCard from "@/components/homePage/6-whyTheyChoose/WhyTheyChooseCard";
+import MoreCapabilities from "@/components/homePage/6-whyTheyChoose/MoreCapabilities";
+import OracleVsTraditional from "@/components/homePage/6-whyTheyChoose/OracleVsTraditional";
+
 
 const WhyTheyChoose = () => {
   return (
@@ -22,6 +25,8 @@ const WhyTheyChoose = () => {
           whyTheyChoose.map((item, i) => <WhyTheyChooseCard key={i} item={item}/>)
         }
       </ul>
+      <MoreCapabilities />
+      <OracleVsTraditional />
     </section>
   );
 };
