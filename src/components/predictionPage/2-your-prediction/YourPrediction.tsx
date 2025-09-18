@@ -1,25 +1,22 @@
 import React from 'react';
 import {Card} from "@/components/ui/card";
 import {Badge} from "@/components/ui/badge";
-import {predictionDetailed} from "@/mocks/one-prediction-page/prediction-detailed";
-import { Button } from '@/components/ui/button';
+import {Button} from '@/components/ui/button';
 import {TrendingDown, TrendingUp} from "lucide-react";
+import {PredictionDetailed} from "@/components/features/prediction/predictionTypes";
 
-const YourPrediction = () => {
-
-  // потом будет приходить из API по запросу на определенный id прогноза
-  const predictionData = predictionDetailed;
+const YourPrediction = ({prediction}:{prediction: PredictionDetailed }) => {
 
   return (
     <Card className="p-4 sm:p-8 glassmorphism items-center">
       <Badge className="bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90 mb-2 sm:mb-4 text-xs">
-        {predictionData.category}
+        {prediction.category}
       </Badge>
       <h1 className="gradient-text text-xl sm:text-2xl lg:text-3xl xl:text-4xl">
-        {predictionData.title}
+        {prediction.title}
       </h1>
       <p className="text-sm sm:text-lg text-muted-foreground max-w-3xl mx-auto text-center">
-        {predictionData.description}
+        {prediction.description}
       </p>
 
       <div className="mt-4 sm:mt-8 p-4 sm:p-6 bg-muted/20 rounded-lg w-full text-center">

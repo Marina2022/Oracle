@@ -1,18 +1,33 @@
 import React from 'react';
 import TopBar from '@/components/predictionPage/1-top-bar/TopBar';
 import YourPrediction from "@/components/predictionPage/2-your-prediction/YourPrediction";
+import {predictionDetailed} from "@/mocks/one-prediction-page/prediction-detailed";
+import Analysis from "@/components/predictionPage/2-your-prediction/Analysis";
+import Comments from "@/components/predictionPage/2-your-prediction/Comments";
 
 const Page = () => {
+
+  // потом будет приходить из API по запросу на определенный id прогноза
+  const predictionData = predictionDetailed;
+
   return (
     <>
       <TopBar/>
       <div className="pt-36 container">
         <div className=" py-4 sm:py-8 space-y-4 sm:space-y-8">
-          <YourPrediction/>
+          <YourPrediction prediction={predictionData} />
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-8">
+          <div className="lg:col-span-2 space-y-4 sm:space-y-6">
+            <Analysis prediction={predictionData} />
+            <Comments/>
+          </div>
 
+          <div>
+            charts
+          </div>
 
         </div>
-
       </div>
     </>
   );
