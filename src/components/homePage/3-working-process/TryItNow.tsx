@@ -1,11 +1,9 @@
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
+import {Badge} from '@/components/ui/badge';
+import {Button} from '@/components/ui/button';
+import {Card} from '@/components/ui/card';
 import React from 'react';
-import {tryItNowModels} from "@/mocks/tryItNowModels";
+import {tryItNowModels} from "@/mocks/home-page/tryItNowModels";
 import TryItNowModel from "@/components/homePage/3-working-process/TryItNowModel";
-
-
 
 const TryItNow = () => {
   return (
@@ -14,7 +12,6 @@ const TryItNow = () => {
         <h3 className="text-2xl font-bold mb-4">Попробуйте прямо сейчас</h3>
         <p className="text-muted-foreground">Проверьте, как работает консенсус ИИ на примере актуального события</p>
       </div>
-
       <div className="grid md:grid-cols-2 gap-8 items-center">
         <div className="space-y-4">
           <div className="p-4 border border-border rounded-lg">
@@ -41,11 +38,10 @@ const TryItNow = () => {
 
           <ul className="space-y-3">
             {
-              tryItNowModels.map((model, i) => <TryItNowModel key={i} model={model} />)
+              tryItNowModels.map((model, i) => <TryItNowModel key={i} model={model}/>)
             }
           </ul>
         </div>
-
       </div>
     </Card>
   );

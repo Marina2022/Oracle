@@ -4,6 +4,7 @@ import "./globals.css";
 import "./my-globals.scss";
 import Header from "@/components/layout/header/Header";
 import Providers from "@/providers";
+import Footer from "@/components/layout/header/Footer";
 
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function RootLayout({
     <Providers>
       <Header/>
       {children}
+      <Footer />
     </Providers>
     </body>
     </html>

@@ -2,7 +2,7 @@ import React from 'react';
 import {Badge} from "@/components/ui/badge";
 import {Card} from "@/components/ui/card";
 import {Award, Target, TrendingUp, Users} from "lucide-react";
-import {reviews} from '@/mocks/reviews';
+import {reviews} from '@/mocks/home-page/reviews';
 import Review from "@/components/homePage/5-trust/Review";
 
 const Trust = () => {
@@ -80,12 +80,10 @@ const Trust = () => {
               <div className="text-2xl font-bold text-secondary mb-2">99.9%</div>
               <div className="text-sm xl:text-md text-muted-foreground">Время работы платформы</div>
             </div>
-
             <div>
               <div className="text-2xl font-bold text-primary mb-2">24/7</div>
               <div className="text-sm xl:text-md text-muted-foreground">Техническая поддержка</div>
             </div>
-
             <div>
               <div className="text-2xl font-bold text-accent mb-2">100%</div>
               <div className="text-sm xl:text-md text-muted-foreground">Безопасность данных</div>

@@ -25,7 +25,6 @@ const WhyTheyChooseCard = ({item}: { item: WhyTheyChooseType }) => {
           }
         </ul>
       </Card>
-
     </li>
   );
 };

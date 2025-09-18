@@ -9,21 +9,19 @@ const FindOutYourFuture = () => {
         <Badge variant="blueBig">
           <span className="max-sm:hidden">🚀 </span>Первая в России платформа сравнения ИИ-прогнозов
         </Badge>
-
         <h1 className="text-4xl md:text-6xl font-bold leading-tight">
           <span className="gradient-text">Узнай будущее</span>
           <br/>
           с помощью ИИ
         </h1>
-
         <p className="lg:text-xl text-lg text-muted-foreground leading-relaxed">
-          Сравнивайте прогнозы от 7 ведущих AI-моделей, участвуйте в предсказаниях и зарабатывайте очки за точность. Развлечение встречается с интеллектом.
+          Сравнивайте прогнозы от 7 ведущих AI-моделей, участвуйте в предсказаниях и зарабатывайте очки за точность.
+          Развлечение встречается с интеллектом.
         </p>
       </div>
-
       <div className="flex flex-col sm:flex-row gap-4 mb-7">
-        <Button variant="default" className="px-8 py-6" >Начать прогнозировать</Button>
-        <Button variant="secondary" className="px-8 py-6" >Смотреть демо</Button>
+        <Button variant="default" className="px-8 py-6">Начать прогнозировать</Button>
+        <Button variant="secondary" className="px-8 py-6">Смотреть демо</Button>
       </div>
 
       <div className="flex items-center space-x-8">

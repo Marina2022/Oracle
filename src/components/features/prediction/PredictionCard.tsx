@@ -32,13 +32,16 @@ const PredictionCard = ({prediction}: { prediction: PredictionType }) => {
 
   return (
     <Card
-      onClick={() => {router.push(`/predictions/${prediction.id}`)}}
+      onClick={() => {
+        router.push(`/predictions/${prediction.id}`)
+      }}
       className="glassmorphism p-6 gap-0 hover:scale-[1.02] transition-all duration-300 hover:neon-glow group cursor-pointer ">
 
       <div className="flex items-start justify-between gap-4">
         <div>
           <div className="flex items-center space-x-2 mb-2">
-            <Badge className="text-xs text-foreground bg-transparent border border-border ">{prediction.category}</Badge>
+            <Badge
+              className="text-xs text-foreground bg-transparent border border-border ">{prediction.category}</Badge>
             {
               prediction.growing ? <TrendingUpIcon className="w-4 h-4 text-chart-4"/> :
                 <TrendingDownIcon className="w-4 h-4 text-chart-5"/>
@@ -47,17 +50,15 @@ const PredictionCard = ({prediction}: { prediction: PredictionType }) => {
           <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors">{prediction.title}</h3>
           <p className="text-sm text-muted-foreground mb-5">{prediction.content}</p>
         </div>
-
-        <ShareButtons url={`/predictions/${prediction.id}`} />
+        <ShareButtons url={`/predictions/${prediction.id}`}/>
       </div>
-
       <div className="space-y-3">
         <div className="flex items-center justify-between">
           <span className="text-sm text-muted-foreground">Консенсус ИИ</span>
           <span className="text-2xl font-bold text-secondary">{prediction.consensus}%</span>
         </div>
 
-        <Progress value={prediction.consensus} className="h-3" />
+        <Progress value={prediction.consensus} className="h-3"/>
 
         <div className="grid grid-cols-2 gap-4 text-sm">
           <div className="flex items-center space-x-2">
@@ -89,12 +90,12 @@ const PredictionCard = ({prediction}: { prediction: PredictionType }) => {
           </div>
         </div>
       </div>
-
-      <Separator className="mt-4" />
-      <Button asChild className="bg-transparent mt-4 hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3 w-full justify-between text-sm">
+      <Separator className="mt-4"/>
+      <Button asChild
+              className="bg-transparent mt-4 hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3 w-full justify-between text-sm">
         <Link href={`/predictions/${prediction.id}`}>
           <span>Подробный анализ</span>
-          <ChevronRight className="w-4 h-4" />
+          <ChevronRight className="w-4 h-4"/>
         </Link>
       </Button>
     </Card>

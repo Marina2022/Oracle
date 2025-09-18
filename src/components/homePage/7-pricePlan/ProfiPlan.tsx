@@ -22,8 +22,6 @@ const ProfiPlan = () => {
   return (
     <Card className="relative glassmorphism p-8 hover:scale-105 transition-all duration-300 neon-glow">
       <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-primary-foreground">Популярный</Badge>
-
-
       <div className="text-center">
         <div className="w-16 h-16 mx-auto mb-4 rounded-2xl flex items-center justify-center bg-primary/20 text-primary">
           <Crown className="h-6 w-6" />
@@ -35,7 +33,6 @@ const ProfiPlan = () => {
           <span className="text-muted-foreground">/ в месяц</span>
         </div>
       </div>
-
       <ul className="space-y-3">
         {
           services.map((service, i) => <li key={i} className="flex items-center space-x-3">
@@ -44,10 +41,7 @@ const ProfiPlan = () => {
           </li>)
         }
       </ul>
-
-
       <Button className="h-10 rounded-md px-6">Выбрать Профи</Button>
-
     </Card>
   );
 };

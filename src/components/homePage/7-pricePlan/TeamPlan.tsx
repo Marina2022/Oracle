@@ -31,7 +31,6 @@ const TeamPlan = () => {
           <span className="text-muted-foreground">/ в месяц</span>
         </div>
       </div>
-
       <ul className="space-y-3">
         {
           services.map((service, i) => <li key={i} className="flex items-center space-x-3">
@@ -40,10 +39,7 @@ const TeamPlan = () => {
           </li>)
         }
       </ul>
-
-
       <Button className="h-10 rounded-md px-6">Связаться с нами</Button>
-
     </Card>
   );
 };

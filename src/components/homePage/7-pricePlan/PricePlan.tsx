@@ -22,17 +22,14 @@ const PricePlan = () => {
             Начните с бесплатного плана или выберите Профи для полного доступа ко всем возможностям платформы
           </p>
         </div>
-
         <div className="grid lg:grid-cols-3 gap-10 mb-16">
           <BasePlan/>
           <ProfiPlan/>
           <TeamPlan/>
         </div>
-
         <Special/>
         <Faq/>
       </div>
-
     </section>
   );
 };
