@@ -22,7 +22,7 @@ export type ModelForDetailedPrediction = {
   confidence: number,
   historicPrecision: number,
   sources: string[],
-  reasoning: { title: string, text: string }[],
+  reasonings: { title: string, text: string }[],
   detailedAnalysis: string,
   resume: string
 }
