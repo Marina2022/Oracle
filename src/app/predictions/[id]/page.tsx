@@ -2,8 +2,9 @@ import React from 'react';
 import TopBar from '@/components/predictionPage/1-top-bar/TopBar';
 import YourPrediction from "@/components/predictionPage/2-your-prediction/YourPrediction";
 import {predictionDetailed} from "@/mocks/one-prediction-page/prediction-detailed";
-import Analysis from "@/components/predictionPage/2-your-prediction/Analysis";
-import Comments from "@/components/predictionPage/2-your-prediction/Comments";
+import Analysis from "@/components/predictionPage/3-analysis/Analysis";
+import Comments from "@/components/predictionPage/3-analysis/Comments";
+import ChartsAll from "@/components/predictionPage/4-charts/ChartsAll";
 
 const Page = () => {
 
@@ -24,7 +25,7 @@ const Page = () => {
           </div>
 
           <div>
-            charts
+            <ChartsAll prediction={predictionData} />
           </div>
 
         </div>

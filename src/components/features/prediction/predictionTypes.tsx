@@ -34,6 +34,8 @@ type CommentForDetailedPrediction = {
   likes: number
 }
 
+export type Voting = { label: string, percent: number, peopleNumber: number }[]
+
 export type PredictionDetailed =
   {
     id: string,
@@ -41,9 +43,6 @@ export type PredictionDetailed =
     category: string,
     description: string,
     models: ModelForDetailedPrediction[],
-    voting: {
-      positive: {percent: number, peopleNumber: number},
-      negative: {percent: number, peopleNumber: number},
-    }
+    voting: Voting,
     comments: CommentForDetailedPrediction[]
   }

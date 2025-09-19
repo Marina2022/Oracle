@@ -3,7 +3,7 @@ import {Card} from "@/components/ui/card";
 import {Brain} from "lucide-react";
 import {PredictionDetailed} from "@/components/features/prediction/predictionTypes";
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs"
-import TabContent from "@/components/predictionPage/2-your-prediction/TabContent";
+import TabContent from "@/components/predictionPage/3-analysis/TabContent";
 
 
 const Analysis = ({prediction}: { prediction: PredictionDetailed }) => {

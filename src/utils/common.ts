@@ -15,6 +15,11 @@ export const formatParticipants = (count: number): string => {
   } else if (lastDigit >= 2 && lastDigit <= 4) {
     suffix = "участника";
   }
-
   return `${count} ${suffix}`;
 }
+
+export const formatNumber = (number: number) => {
+  return new Intl.NumberFormat('ru-RU').format(number)
+}
+
+

@@ -117,16 +117,18 @@ export const predictionDetailed = {
       resume: "Положительный прогноз с учетом российской специфики развития ИИ-сферы"
     }
   ],
-  voting: {
-    positive: {
+  voting: [
+    {
+      label: "ДА",
       percent: 67,
       peopleNumber: 1247
     },
-    negative: {
+    {
+      label: "НЕТ",
       percent: 33,
       peopleNumber: 613
     }
-  },
+  ],
   comments: [
     {
       sendingTime: "2 мин назад",  // потом с API timestamp  надо будет тут посылать
