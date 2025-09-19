@@ -4,14 +4,10 @@ import Predictions from "@/components/homePage/4-predictions/Predictions";
 
 const Page = () => {
   return (
-    <>
+    <div className="pt-28">
       <TopBarPredictions/>
-      <div className="py-20 container">
-        <Predictions all={true} />
-
-
-      </div>
-    </>
+      <Predictions all={true}/>
+    </div>
   );
 };
 
