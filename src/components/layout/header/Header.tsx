@@ -8,7 +8,7 @@ import ToggleLang from "@/components/layout/header/ToggleLang";
 import {Menu} from "lucide-react"
 import {useState} from "react";
 
-const Header = async () => {
+const Header = () => {
 
 
   const [isLogined, setIsLogined] = useState<boolean>(true)
@@ -38,7 +38,7 @@ const Header = async () => {
           <div className="flex gap-4 items-center">
             <ToggleTheme/>
             <ToggleLang/>
-            <UserMenu isLogined="isLogined" setIsLogined="setIsLogined" />
+            <UserMenu isLogined={isLogined} setIsLogined={setIsLogined} />
 
             <Menu className="inline lg:hidden "/>
           </div>
