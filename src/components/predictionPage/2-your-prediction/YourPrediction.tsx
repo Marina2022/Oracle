@@ -18,9 +18,7 @@ const YourPrediction = ({prediction}:{prediction: PredictionDetailed }) => {
       <p className="text-sm sm:text-lg text-muted-foreground max-w-3xl mx-auto text-center">
         {prediction.description}
       </p>
-
       <div className="mt-4 sm:mt-8 p-4 sm:p-6 bg-muted/20 rounded-lg w-full text-center">
-
         <p className="font-medium mb-4 text-sm sm:text-base">Ваш прогноз</p>
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
           <Button className="bg-primary text-primary-foreground hover:bg-primary/90  border hover:text-accent-foreground border-border h-10 rounded-md px-6 has-[>svg]:px-4 gap-2 w-full sm:w-auto sm:px-8">

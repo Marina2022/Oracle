@@ -1,11 +1,19 @@
+'use client'
+
 import Link from "next/link";
 import ToggleTheme from './ToggleTheme';
 import UserMenu from "@/components/layout/header/UserMenu";
 import Logo from "@/components/shared/Logo";
 import ToggleLang from "@/components/layout/header/ToggleLang";
 import {Menu} from "lucide-react"
+import {useState} from "react";
 
 const Header = async () => {
+
+
+  const [isLogined, setIsLogined] = useState<boolean>(true)
+
+
   return (
     <header>
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border glassmorphism">
@@ -30,7 +38,8 @@ const Header = async () => {
           <div className="flex gap-4 items-center">
             <ToggleTheme/>
             <ToggleLang/>
-            <UserMenu/>
+            <UserMenu isLogined="isLogined" setIsLogined="setIsLogined" />
+
             <Menu className="inline lg:hidden "/>
           </div>
         </div>

@@ -14,7 +14,6 @@ export type PredictionType =
     } []
   }
 
-
 export type ModelForDetailedPrediction = {
   modelTab: string,
   modelTitle: string,

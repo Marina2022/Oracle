@@ -12,7 +12,9 @@ const PredictionComment = ({comment}:{comment: CommentForDetailedPrediction}) =>
   return (
     <li className="flex gap-3 p-4 bg-muted/20 rounded-lg">
       <Avatar className="w-10 h-10">
-          <AvatarImage src={comment.sender.avatar} alt="avatar"/>
+        {
+          comment.sender.avatar && <AvatarImage src={comment.sender.avatar} alt="avatar"/>
+        }
         <AvatarFallback
           className="w-full h-full bg-gradient-to-br from-primary to-secondary text-primary-foreground">{getInitials(comment.sender.name)}</AvatarFallback>
       </Avatar>
@@ -34,7 +36,6 @@ const PredictionComment = ({comment}:{comment: CommentForDetailedPrediction}) =>
             <span>Ответить</span>
           </Button>
         </div>
-
       </div>
 
 
