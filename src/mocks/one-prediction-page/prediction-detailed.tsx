@@ -1,4 +1,4 @@
-import {PredictionDetailed} from "@/components/features/prediction/predictionTypes";
+import {PredictionDetailed} from "@/types/predictionTypes";
 
 export const predictionDetailed: PredictionDetailed = {
   id: "a3b5c7a9b",

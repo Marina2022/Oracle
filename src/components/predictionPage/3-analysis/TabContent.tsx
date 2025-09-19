@@ -1,5 +1,5 @@
 import React from 'react';
-import {ModelForDetailedPrediction, PredictionDetailed} from "@/components/features/prediction/predictionTypes";
+import {ModelForDetailedPrediction, PredictionDetailed} from "@/types/predictionTypes";
 import {Brain, CircleCheckBig, ExternalLink} from 'lucide-react';
 import {Badge} from '@/components/ui/badge';
 import {Progress} from "@/components/ui/progress";

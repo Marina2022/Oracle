@@ -1,6 +1,6 @@
 import React from 'react';
 import PredictionPieChart from "@/components/predictionPage/4-charts/pie-chart/PredictionPieChart";
-import {PredictionDetailed} from "@/components/features/prediction/predictionTypes";
+import {PredictionDetailed} from "@/types/predictionTypes";
 import ComparePredictions from "@/components/predictionPage/4-charts/ComparePredictions";
 import BarChartBlock from "@/components/predictionPage/4-charts/bar-chart/BarChartBlock";
 

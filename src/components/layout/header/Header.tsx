@@ -57,7 +57,7 @@ const Header = () => {
           }
 
           {
-            isLoggedIn && <div className="hidden 2xl:flex items-center space-x-10 text-sm">
+            isLoggedIn && <div className="hidden 2xl:flex items-center gap-7 justify-between flex-1 text-sm">
               {
                 loggedInMenu.map((item, i) => <Link
                   key={i}
@@ -66,7 +66,7 @@ const Header = () => {
               }
             </div>
           }
-          <div className="flex gap-2 md:ml-8 items-center">
+          <div className="flex gap-1 md:ml-6 items-center">
 
             <ToggleTheme/>
             <ToggleLang/>

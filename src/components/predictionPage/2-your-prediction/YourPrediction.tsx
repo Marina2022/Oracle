@@ -3,7 +3,7 @@ import {Card} from "@/components/ui/card";
 import {Badge} from "@/components/ui/badge";
 import {Button} from '@/components/ui/button';
 import {TrendingDown, TrendingUp} from "lucide-react";
-import {PredictionDetailed} from "@/components/features/prediction/predictionTypes";
+import {PredictionDetailed} from "@/types/predictionTypes";
 
 const YourPrediction = ({prediction}:{prediction: PredictionDetailed }) => {
 

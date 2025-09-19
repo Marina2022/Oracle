@@ -1,7 +1,7 @@
 import React from 'react';
 import {Card} from "@/components/ui/card";
 import {Brain} from "lucide-react";
-import {PredictionDetailed} from "@/components/features/prediction/predictionTypes";
+import {PredictionDetailed} from "@/types/predictionTypes";
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs"
 import TabContent from "@/components/predictionPage/3-analysis/TabContent";
 

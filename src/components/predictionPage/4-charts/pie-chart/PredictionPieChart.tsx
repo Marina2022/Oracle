@@ -4,7 +4,7 @@ import React from 'react';
 import {Card} from "@/components/ui/card";
 import {Users} from "lucide-react";
 import {PieChart, Pie, Cell, Tooltip, ResponsiveContainer} from "recharts"
-import {Voting} from '@/components/features/prediction/predictionTypes';
+import {Voting} from '@/types/predictionTypes';
 import CustomTooltip from "@/components/predictionPage/4-charts/pie-chart/CustomTooltip";
 import {formatNumber} from "@/utils/common";
 

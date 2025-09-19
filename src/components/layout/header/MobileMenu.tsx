@@ -22,9 +22,7 @@ const MobileMenu = ({loggedInMenu, loggedOutMenu, isLoggedIn}: {
 }) => {
 
   const pathname = usePathname();
-
   const [isOpen, setIsOpen] = useState(false)
-
   const handleLinkClick = () => {
     setIsOpen(false) // закрываем меню при клике
   }
@@ -59,7 +57,6 @@ const MobileMenu = ({loggedInMenu, loggedOutMenu, isLoggedIn}: {
             }
           </SheetHeader>
 
-
           {
             isLoggedIn && (
               <nav className="mt-4 flex flex-col ">
@@ -84,7 +81,6 @@ const MobileMenu = ({loggedInMenu, loggedOutMenu, isLoggedIn}: {
                     <span>Админ-панель</span>
                     <Badge className="ml-auto bg-chart-5/20 text-chart-5">NEW</Badge>
                   </Link>
-
                 </div>
               </nav>
             )

@@ -1,5 +1,5 @@
 import React from 'react';
-import {CommentForDetailedPrediction} from "@/components/features/prediction/predictionTypes";
+import {CommentForDetailedPrediction} from "@/types/predictionTypes";
 import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar"
 import { getInitials } from '@/utils/common';
 import {Badge} from "@/components/ui/badge";

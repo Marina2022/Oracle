@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react';
-import {ModelForDetailedPrediction} from "@/components/features/prediction/predictionTypes";
+import {ModelForDetailedPrediction} from "@/types/predictionTypes";
 import {Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis} from 'recharts';
 import CustomBarChartTooltip from "@/components/predictionPage/4-charts/bar-chart/CustomBarChartTooltip";
 

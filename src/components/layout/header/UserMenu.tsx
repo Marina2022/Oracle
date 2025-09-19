@@ -12,12 +12,10 @@ import {ChartColumn, LogOut, Users} from "lucide-react";
 import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
 import {getInitials} from "@/utils/common";
 
-
 interface AuthStateProps {
   isLoggedIn: boolean;
   setIsLoggedIn: Dispatch<SetStateAction<boolean>>;
 }
-
 
 // из API
 const user = {
@@ -32,7 +30,7 @@ const UserMenu = ({isLoggedIn, setIsLoggedIn}: AuthStateProps) => {
         !isLoggedIn && <>
           <Link className={buttonVariants({variant: 'outline'}) + " font-medium !h-8 !hidden lg:block"}
                 href="#">Войти</Link>
-          <Button  asChild onClick={() => setIsLoggedIn(true)}>
+          <Button asChild onClick={() => setIsLoggedIn(true)}>
             <Link className={buttonVariants({variant: 'default'}) + "font-medium !h-8"} href="#">Регистрация</Link>
           </Button>
         </>
@@ -42,13 +40,11 @@ const UserMenu = ({isLoggedIn, setIsLoggedIn}: AuthStateProps) => {
         isLoggedIn && <>
 
           <DropdownMenu modal={false}>
-            <DropdownMenuTrigger >
+            <DropdownMenuTrigger>
               <div className="hidden md:flex items-center gap-2 border border-border rounded-md px-3 py-1 !text-sm">
                 <Users className="w-4 h-4"/>
                 <span>{user.name}</span>
               </div>
-
-
               <Avatar className="w-8 h-8 md:hidden">
                 {
                   user.avatar && <AvatarImage src={user.avatar} alt="avatar"/>
@@ -56,24 +52,19 @@ const UserMenu = ({isLoggedIn, setIsLoggedIn}: AuthStateProps) => {
                 <AvatarFallback
                   className="w-8 h-8 bg-input text-foreground">{getInitials(user.name)}</AvatarFallback>
               </Avatar>
-
-
-
             </DropdownMenuTrigger>
             <DropdownMenuContent className="border border-border">
               <DropdownMenuItem className="flex gap-4">
-                <ChartColumn />
+                <ChartColumn/>
                 Панель управления
               </DropdownMenuItem>
               <DropdownMenuSeparator/>
-              <DropdownMenuItem className="flex gap-4" onClick={() => setIsLoggedIn(false)} >
-                <LogOut />
+              <DropdownMenuItem className="flex gap-4" onClick={() => setIsLoggedIn(false)}>
+                <LogOut/>
                 Выйти
-                </DropdownMenuItem>
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-
-
         </>
       }
     </div>

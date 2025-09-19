@@ -1,6 +1,6 @@
 import React from 'react';
 import {Card} from "@/components/ui/card";
-import {ModelForDetailedPrediction} from "@/components/features/prediction/predictionTypes";
+import {ModelForDetailedPrediction} from "@/types/predictionTypes";
 import {ChartColumn} from "lucide-react";
 import {Badge} from '@/components/ui/badge';
 import {Progress} from "@/components/ui/progress";

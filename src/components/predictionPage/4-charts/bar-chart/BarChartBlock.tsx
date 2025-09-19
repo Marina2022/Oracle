@@ -1,7 +1,7 @@
 import {Card} from '@/components/ui/card';
 import React from 'react';
 import {Star} from "lucide-react";
-import {ModelForDetailedPrediction} from "@/components/features/prediction/predictionTypes";
+import {ModelForDetailedPrediction} from "@/types/predictionTypes";
 import PredictionBarChart from "@/components/predictionPage/4-charts/bar-chart/PredictionBarChart";
 
 const BarChartBlock = ({models}: {models: ModelForDetailedPrediction[]}) => {
