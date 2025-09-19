@@ -6,6 +6,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
+
 :root {
     --font-size: 16px;
     /* Light theme colors */
@@ -187,7 +188,7 @@
 
 html {
     font-size: var(--font-size);
-    scroll-behavior: smooth !important;
+    /*scroll-behavior: smooth !important;*/
 }
 
 
@@ -208,6 +209,10 @@ html {
 
     .dark .gradient-logo {
         background-image: linear-gradient(135deg, #0066FF, #00FFFF);
+    }
+
+    .mobile-menu-gradient {
+        background-image: linear-gradient(135deg, rgba(0,102,255,0.2), rgba(8,145,178,0.2));
     }
 }
 
@@ -478,3 +483,4 @@ html {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+
