@@ -7,9 +7,15 @@ import {Button} from "@/components/ui/button";
 import Link from "next/link";
 import {ChevronRight} from 'lucide-react';
 
-const Predictions = () => {
+const Predictions = ({all=false}:{all:boolean}) => {
 
-  const predictionsToShow = predictions.slice(0, 4)
+  let predictionsToShow
+  if (all) {
+    predictionsToShow = predictions
+  } else {
+    predictionsToShow = predictions.slice(0, 4)
+  }
+
   return (
     <section id="predictions" className="py-20 container">
       <div className="text-center mb-16">
@@ -70,14 +76,19 @@ const Predictions = () => {
         </li>
       </ul>
 
-      <div className="text-center">
-        <Button asChild className="max-md:w-full max-w-[400px]">
-          <Link href="/predictions">
-            <span>Посмотреть все прогнозы</span>
-            <ChevronRight/>
-          </Link>
-        </Button>
-      </div>
+      {
+        !all && (
+          <div className="text-center">
+            <Button asChild className="max-md:w-full max-w-[400px]">
+              <Link href="/predictions">
+                <span>Посмотреть все прогнозы</span>
+                <ChevronRight/>
+              </Link>
+            </Button>
+          </div>
+        )
+      }
+
     </section>
   );
 };

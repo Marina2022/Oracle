@@ -1,10 +1,17 @@
 import React from 'react';
+import TopBarPredictions from "@/components/PredictionsPage/1-top-bar-predictions/TopBarPredictions";
+import Predictions from "@/components/homePage/4-predictions/Predictions";
 
 const Page = () => {
   return (
-    <div className="py-20 container">
-      predictions
-    </div>
+    <>
+      <TopBarPredictions/>
+      <div className="py-20 container">
+        <Predictions all={true} />
+
+
+      </div>
+    </>
   );
 };
 
