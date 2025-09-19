@@ -67,20 +67,20 @@ const Footer = () => {
           <ul className="space-y-2">
             <h4 className="font-medium">Продукт</h4>
             <li className="space-y-3">
-              <Link href="/#working-process"
+              <Link href="/public#working-process"
                     className="text-sm text-muted-foreground hover:text-primary transition-colors">Как это
                 работает</Link>
             </li>
             <li className="space-y-3">
-              <Link href="/#models"
+              <Link href="/public#models"
                     className="text-sm text-muted-foreground hover:text-primary transition-colors">ИИ Модели</Link>
             </li>
             <li className="space-y-3">
-              <Link href="/#predictions"
+              <Link href="/public#predictions"
                     className="text-sm text-muted-foreground hover:text-primary transition-colors">Прогнозы</Link>
             </li>
             <li className="space-y-3">
-              <Link href="/#working-process"
+              <Link href="/public#working-process"
                     className="text-sm text-muted-foreground hover:text-primary transition-colors">Цены</Link>
             </li>
             <li>
