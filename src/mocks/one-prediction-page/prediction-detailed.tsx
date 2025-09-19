@@ -1,4 +1,6 @@
-export const predictionDetailed = {
+import {PredictionDetailed} from "@/components/features/prediction/predictionTypes";
+
+export const predictionDetailed: PredictionDetailed = {
   id: "a3b5c7a9b",
   category: "Технологии • Прогноз популярности",
   title: "Станет ли ИИ самой обсуждаемой технологией 2024 года?",
@@ -10,6 +12,7 @@ export const predictionDetailed = {
       answerIsPositive: true,
       confidence: 72,
       historicPrecision: 68,
+      predictionsNumber: 45,
       sources: [
         "Анализ медиа-трендов Google Trends",
         "Статистика LinkedIn по упоминаниям технологий",
@@ -38,6 +41,7 @@ export const predictionDetailed = {
       answerIsPositive: true,
       confidence: 65,
       historicPrecision: 71,
+      predictionsNumber: 42,
       sources: [
         "Исследования Pew Research Center",
         "Отчеты McKinsey о цифровой трансформации",
@@ -66,6 +70,7 @@ export const predictionDetailed = {
       answerIsPositive: false,
       confidence: 58,
       historicPrecision: 64,
+      predictionsNumber: 48,
       sources: [
         "Аналитика Gartner по технологическим циклам",
         "Исследования MIT Technology Review",
@@ -94,6 +99,7 @@ export const predictionDetailed = {
       answerIsPositive: true,
       confidence: 69,
       historicPrecision: 62,
+      predictionsNumber: 52,
       sources: [
         "Аналитика Яндекса по поисковым запросам",
         "Данные российских IT-компаний",
@@ -134,7 +140,8 @@ export const predictionDetailed = {
       sendingTime: "2 мин назад",  // потом с API timestamp  надо будет тут посылать
       sender: {
         name: "Александр",
-        level: 12
+        level: 12,
+        avatar: "/avatars/ava2.jpg"
       },
       message: "Интересно видеть разные мнения моделей. ChatGPT и Claude сходятся в оптимизме, но Gemini более осторожен к циклам трендов.",
       likes: 8
@@ -143,7 +150,8 @@ export const predictionDetailed = {
       sendingTime: "5 мин назад",
       sender: {
         name: "Мария",
-        level: 8
+        level: 8,
+        avatar: null
       },
       message: "ИИ действительно везде сейчас - в новостях, образовании, бизнесе. Сложно представить, что что-то другое может его превзойти по популярности.",
       likes: 15
@@ -152,7 +160,8 @@ export const predictionDetailed = {
       sendingTime: "8 мин назад",
       sender: {
         name: "Дмитрий",
-        level: 15
+        level: 15,
+        avatar: "/avatars/ava1.jpg"
       },
       message: "Согласен с анализом YandexGPT про российский рынок. У нас ИИ-тема тоже очень активно развивается и обсуждается.",
       likes: 6

@@ -1,8 +1,8 @@
 import React from 'react';
 import {Card} from "@/components/ui/card";
-import {ModelForDetailedPrediction, PredictionDetailed} from "@/components/features/prediction/predictionTypes";
-import {ChartColumn, Users} from "lucide-react";
-import { Badge } from '@/components/ui/badge';
+import {ModelForDetailedPrediction} from "@/components/features/prediction/predictionTypes";
+import {ChartColumn} from "lucide-react";
+import {Badge} from '@/components/ui/badge';
 import {Progress} from "@/components/ui/progress";
 
 const ComparePredictions = ({models}: {models: ModelForDetailedPrediction[]}) => {

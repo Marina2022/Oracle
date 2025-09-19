@@ -23,3 +23,16 @@ export const formatNumber = (number: number) => {
 }
 
 
+export const getInitials = (fullName: string): string => {
+  if (!fullName) return '';
+
+  const words = fullName.trim().split(/\s+/); // разбиваем по пробелам
+  if (words.length === 1) {
+    // если одно слово, берем первую букву
+    return words[0][0].toUpperCase();
+  } else {
+    // если два и больше слов, берем первые буквы первых двух
+    return (words[0][0] + words[1][0]).toUpperCase();
+  }
+}
+

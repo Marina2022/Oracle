@@ -5,22 +5,10 @@ import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar"
 import Rating from "@/components/shared/Rating";
 import {Badge} from "@/components/ui/badge";
 import {Quote} from "lucide-react";
+import {getInitials} from "@/utils/common";
 
 
 const Review = ({review}: { review: ReviewType }) => {
-
-  const getInitials = (fullName: string): string => {
-    if (!fullName) return '';
-
-    const words = fullName.trim().split(/\s+/); // разбиваем по пробелам
-    if (words.length === 1) {
-      // если одно слово, берем первую букву
-      return words[0][0].toUpperCase();
-    } else {
-      // если два и больше слов, берем первые буквы первых двух
-      return (words[0][0] + words[1][0]).toUpperCase();
-    }
-  }
 
   return (
     <li>
