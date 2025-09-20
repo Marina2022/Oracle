@@ -4,7 +4,7 @@ import React from 'react';
 import {Card} from "@/components/ui/card";
 import {PredictionType} from "@/types/predictionTypes";
 import {Badge} from "@/components/ui/badge";
-import {ChevronRight, Clock, Share2, TrendingDownIcon, TrendingUpIcon, Users} from "lucide-react";
+import {ChevronRight, Clock, TrendingDownIcon, TrendingUpIcon, Users} from "lucide-react";
 import {Button} from "@/components/ui/button";
 import {Progress} from "@/components/ui/progress";
 import {formatParticipants} from "@/utils/common";
@@ -28,7 +28,6 @@ const PredictionCard = ({prediction}: { prediction: PredictionType }) => {
     precisionText = "Средняя"
     precisionClass = "bg-chart-5/20 text-chart-5"
   }
-
 
   return (
     <Card
@@ -57,9 +56,7 @@ const PredictionCard = ({prediction}: { prediction: PredictionType }) => {
           <span className="text-sm text-muted-foreground">Консенсус ИИ</span>
           <span className="text-2xl font-bold text-secondary">{prediction.consensus}%</span>
         </div>
-
         <Progress value={prediction.consensus} className="h-3"/>
-
         <div className="grid grid-cols-2 gap-4 text-sm">
           <div className="flex items-center space-x-2">
             <Clock className="w-4 h-4 text-muted-foreground"/>
@@ -73,7 +70,6 @@ const PredictionCard = ({prediction}: { prediction: PredictionType }) => {
             </div>
           </div>
         </div>
-
         <div className="space-y-2">
           <div className="flex items-center justify-between text-sm">
             <span className="text-muted-foreground">Топ модели:</span>

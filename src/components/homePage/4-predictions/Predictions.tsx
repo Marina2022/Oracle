@@ -7,7 +7,7 @@ import {Button} from "@/components/ui/button";
 import Link from "next/link";
 import {ChevronRight} from 'lucide-react';
 
-const Predictions = ({all=false}:{all?:boolean}) => {
+const Predictions = ({all = false}: { all?: boolean }) => {
 
   let predictionsToShow
   if (all) {
@@ -88,7 +88,6 @@ const Predictions = ({all=false}:{all?:boolean}) => {
           </div>
         )
       }
-
     </section>
   );
 };

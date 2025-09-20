@@ -5,7 +5,6 @@ import {ReactNode, useState} from "react"
 import Link from "next/link"
 import {Menu, Shield} from "lucide-react"
 import {usePathname} from "next/navigation";
-
 import {Sheet, SheetContent, SheetDescription, SheetHeader, SheetTrigger,} from "@/components/ui/sheet"
 import {Button} from "@/components/ui/button"
 import {Progress} from "@/components/ui/progress";
@@ -108,6 +107,5 @@ const MobileMenu = ({loggedInMenu, loggedOutMenu, isLoggedIn}: {
     </div>
   )
 }
-
 
 export default MobileMenu

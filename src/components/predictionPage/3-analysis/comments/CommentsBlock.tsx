@@ -28,13 +28,11 @@ const CommentsBlock = ({comments}: { comments: CommentForDetailedPrediction[] })
           <span className="text-sm">Отправить комментарий</span>
         </Button>
       </div>
-
       <ul className="space-y-4">
         {
           comments.map((comment, i) => <PredictionComment key={i} comment={comment}/>)
         }
       </ul>
-
     </Card>
   );
 };

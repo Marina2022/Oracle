@@ -3,7 +3,7 @@
 import React from 'react';
 import {Card} from "@/components/ui/card";
 import {Users} from "lucide-react";
-import {PieChart, Pie, Cell, Tooltip, ResponsiveContainer} from "recharts"
+import {Cell, Pie, PieChart, ResponsiveContainer, Tooltip} from "recharts"
 import {Voting} from '@/types/predictionTypes';
 import CustomTooltip from "@/components/predictionPage/4-charts/pie-chart/CustomTooltip";
 import {formatNumber} from "@/utils/common";
@@ -59,7 +59,6 @@ const PredictionPieChart = ({voting}: { voting: Voting }) => {
           </PieChart>
         </ResponsiveContainer>
       </div>
-
       <ul className="space-y-3">
         {
           voting.map((item, i) => <li key={i} className="flex items-center justify-between">
@@ -67,7 +66,6 @@ const PredictionPieChart = ({voting}: { voting: Voting }) => {
               <div className="w-3 h-3 rounded-full" style={{backgroundColor: COLORS[i]}}></div>
               <div className="font-medium">{item.label}</div>
             </div>
-
             <div className="text-right">
               <div className="font-bold">{formatNumber(item.peopleNumber)}</div>
               <div className="text-xs text-muted-foreground">{item.percent}%</div>

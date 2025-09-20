@@ -38,7 +38,6 @@ const UserMenu = ({isLoggedIn, setIsLoggedIn}: AuthStateProps) => {
 
       {
         isLoggedIn && <>
-
           <DropdownMenu modal={false}>
             <DropdownMenuTrigger>
               <div className="hidden md:flex items-center gap-2 border border-border rounded-md px-3 py-1 !text-sm">

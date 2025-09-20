@@ -28,7 +28,6 @@ const FindOutYourFuture = () => {
         </Button>
         <Button variant="secondary" className="px-8 py-6">Смотреть демо</Button>
       </div>
-
       <div className="flex items-center space-x-8">
         <div className="text-center">
           <div className="text-2xl font-bold gradient-text">7</div>

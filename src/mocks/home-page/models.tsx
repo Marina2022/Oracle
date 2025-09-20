@@ -97,6 +97,4 @@ export const models = [
     precision: 95,
     icon: <GPT4oIcon />
   }
-
-
 ]

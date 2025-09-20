@@ -36,19 +36,22 @@ const Footer = () => {
               <li>
                 <Button asChild
                         className="bg-transparent hover:bg-accent dark:hover:bg-accent/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 text-muted-foreground hover:text-primary">
-                  <a target="_blank" href="https://www.twitter.com" aria-label="Перейти в Twitter"><Twitter aria-hidden="true"/></a>
+                  <a target="_blank" href="https://www.twitter.com" aria-label="Перейти в Twitter"><Twitter
+                    aria-hidden="true"/></a>
                 </Button>
               </li>
               <li>
                 <Button asChild
                         className="bg-transparent hover:bg-accent dark:hover:bg-accent/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 text-muted-foreground hover:text-primary">
-                  <a target="_blank" href="https://www.linkedin.com" aria-label="Перейти в LinkedIn"><Linkedin aria-hidden="true"/></a>
+                  <a target="_blank" href="https://www.linkedin.com" aria-label="Перейти в LinkedIn"><Linkedin
+                    aria-hidden="true"/></a>
                 </Button>
               </li>
               <li>
                 <Button asChild
                         className="bg-transparent hover:bg-accent dark:hover:bg-accent/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 text-muted-foreground hover:text-primary">
-                  <a target="_blank" href="https://www.github.com" aria-label="Перейти в GitHub"><Github aria-hidden="true"/></a>
+                  <a target="_blank" href="https://www.github.com" aria-label="Перейти в GitHub"><Github
+                    aria-hidden="true"/></a>
                 </Button>
               </li>
               <li>
@@ -59,13 +62,13 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
           <div className="space-y-2">
             <h4 className="font-medium">Продукт</h4>
             <ul className="space-y-2">
               <li>
                 <Link href="/#working-process"
-                      className="text-sm text-muted-foreground hover:text-primary transition-colors">Как это работает</Link>
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors">Как это
+                  работает</Link>
               </li>
               <li>
                 <Link href="/#models"
@@ -95,36 +98,41 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
           <div className="space-y-2">
             <h4 className="font-medium">Компания</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">О нас</Link>
+                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">О
+                  нас</Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Карьера</Link>
+                <Link href="#"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors">Карьера</Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Блог</Link>
+                <Link href="#"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors">Блог</Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Пресс-центр</Link>
+                <Link href="#"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors">Пресс-центр</Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Инвесторы</Link>
+                <Link href="#"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors">Инвесторы</Link>
               </li>
             </ul>
           </div>
-
           <div className="space-y-2">
             <h4 className="font-medium">Поддержка</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Центр помощи</Link>
+                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Центр
+                  помощи</Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Связаться с нами</Link>
+                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Связаться
+                  с нами</Link>
               </li>
               <li>
                 <a href="#"
@@ -141,38 +149,42 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Сообщить об ошибке</Link>
+                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Сообщить
+                  об ошибке</Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Обучение</Link>
+                <Link href="#"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors">Обучение</Link>
               </li>
             </ul>
           </div>
-
           <div className="space-y-2">
             <h4 className="font-medium">Правовая информация</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Пользовательское соглашение</Link>
+                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Пользовательское
+                  соглашение</Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Политика конфиденциальности</Link>
+                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Политика
+                  конфиденциальности</Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Обработка персональных данных</Link>
+                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Обработка
+                  персональных данных</Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Политика cookies</Link>
+                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Политика
+                  cookies</Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Лицензия</Link>
+                <Link href="#"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors">Лицензия</Link>
               </li>
             </ul>
           </div>
         </div>
-
         <Separator className="mb-7"/>
-
         <Card className="glassmorphism p-6 text-center" role="region" aria-label="Подписка на обновления">
           <div className="flex flex-col items-start md:flex-row gap-6 md:justify-between md:items-center">
             <div className="text-left">
@@ -181,7 +193,7 @@ const Footer = () => {
             </div>
 
             <form className="flex space-x-3 w-full md:w-auto" aria-label="Форма подписки на обновления">
-              <input type="email" 
+              <input type="email"
                      placeholder="Ваш email"
                      aria-label="Введите ваш email"
                      className="px-4 py-2 bg-input border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary w-full max-w-[193px]"/>
@@ -192,10 +204,9 @@ const Footer = () => {
             </form>
           </div>
         </Card>
-
         <Separator className="my-7"/>
-
-        <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 text-sm text-muted-foreground">
+        <div
+          className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 text-sm text-muted-foreground">
           <span>© 2024 Oracle AI. Все права защищены.</span>
         </div>
       </div>

@@ -64,7 +64,6 @@ const RealTimePrediction = () => {
           </div>
         </div>
       </Card>
-
     </div>
   );
 };

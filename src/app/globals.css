@@ -3,10 +3,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-
-@custom-variant dark (&:is(.dark *));
-
-
 :root {
     --font-size: 16px;
     /* Light theme colors */
@@ -434,13 +430,11 @@ html {
     scroll-snap-align: start;
 }
 
-/* Touch-friendly интерактивные элементы */
 .touch-target {
     min-height: 44px;
     min-width: 44px;
 }
 
-/* Улучшенная типографика для мобильных */
 @media (max-width: 768px) {
     .text-mobile-friendly {
         font-size: 16px !important;
@@ -456,7 +450,6 @@ html {
     }
 }
 
-/* Продвинутые эффекты стекла */
 .advanced-glass {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(20px) saturate(180%);

@@ -5,7 +5,6 @@ import {PredictionDetailed} from "@/types/predictionTypes";
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs"
 import TabContent from "@/components/predictionPage/3-analysis/TabContent";
 
-
 const Analysis = ({prediction}: { prediction: PredictionDetailed }) => {
 
   const models = prediction.models
@@ -16,11 +15,9 @@ const Analysis = ({prediction}: { prediction: PredictionDetailed }) => {
         <Brain className="h-4 w-4 sm:h-5 sm:w-5 text-primary"/>
         <span>Анализ от AI-моделей</span>
       </h2>
-
       <Tabs defaultValue={models[0].modelTab}>
         <TabsList
           className="bg-muted/20 dark:bg-muted text-muted-foreground w-fit items-center justify-center rounded-xl p-[3px] grid grid-cols-2 sm:grid-cols-4 mb-4 sm:mb-6 h-auto">
-
           {
             models.map((model, i) => (
               <TabsTrigger
@@ -33,13 +30,11 @@ const Analysis = ({prediction}: { prediction: PredictionDetailed }) => {
             ))
           }
         </TabsList>
-
         <div>
-
           {
             models.map((model, i) => (
               <TabsContent value={model.modelTab} key={i}>
-                <TabContent model={model} key={i} />
+                <TabContent model={model} key={i}/>
               </TabsContent>
             ))
           }

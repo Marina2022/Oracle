@@ -35,15 +35,16 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border glassmorphism" aria-label="Главная навигация">
+      <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border glassmorphism"
+           aria-label="Главная навигация">
         <div className="container px-4 py-4 flex items-center justify-between">
           <div className="flex gap-4 items-center">
-            <MobileMenu loggedInMenu={loggedInMenu} loggedOutMenu={loggedOutMenu} isLoggedIn={isLoggedIn} />
+            <MobileMenu loggedInMenu={loggedInMenu} loggedOutMenu={loggedOutMenu} isLoggedIn={isLoggedIn}/>
             <Link href="/" className="md:mr-8" aria-label="На главную">
               <Logo/>
             </Link>
           </div>
-          {!isLoggedIn && 
+          {!isLoggedIn &&
             <div className="hidden 2xl:flex items-center space-x-10" role="navigation" aria-label="Основное меню">
               {loggedOutMenu.map((item, i) => (
                 <Link
@@ -58,8 +59,9 @@ const Header = () => {
             </div>
           }
 
-          {isLoggedIn && 
-            <div className="hidden 2xl:flex items-center gap-7 justify-between flex-1 text-sm" role="navigation" aria-label="Меню пользователя">
+          {isLoggedIn &&
+            <div className="hidden 2xl:flex items-center gap-7 justify-between flex-1 text-sm" role="navigation"
+                 aria-label="Меню пользователя">
               {loggedInMenu.map((item, i) => (
                 <Link
                   key={i}
@@ -72,16 +74,16 @@ const Header = () => {
               ))}
             </div>
           }
-          
+
           <div className="flex gap-1 md:ml-6 items-center">
             <ToggleTheme/>
             <ToggleLang/>
-
             <div className="flex gap-2 items-center">
               {isLoggedIn && (
                 <div className="relative mr-2" role="status" aria-label="Уведомления">
-                  <div className="-top-1 -right-1 absolute rounded-full bg-primary h-3 w-3 text-primary-foreground z-10 text-[8px] flex justify-center items-center" 
-                       aria-label="2 непрочитанных уведомления">
+                  <div
+                    className="-top-1 -right-1 absolute rounded-full bg-primary h-3 w-3 text-primary-foreground z-10 text-[8px] flex justify-center items-center"
+                    aria-label="2 непрочитанных уведомления">
                     2
                   </div>
                   <Bell className="h-4 w-4 text-foreground" aria-hidden="true"/>

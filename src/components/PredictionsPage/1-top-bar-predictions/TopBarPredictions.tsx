@@ -15,7 +15,8 @@ const TopBarPredictions = () => {
   }
 
   return (
-    <div className="fixed top-20 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border glassmorphism" role="navigation" aria-label="Верхняя панель навигации">
+    <div className="fixed top-20 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border glassmorphism"
+         role="navigation" aria-label="Верхняя панель навигации">
       <div className="container py-4 flex items-center justify-between">
         <Button onClick={handleBack}
                 aria-label="Вернуться назад"

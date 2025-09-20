@@ -15,7 +15,6 @@ const Step2Icon = () => {
   </div>
 }
 
-
 const Step3Icon = () => {
   return <div
     className="w-16 h-16 md:w-20 md:h-20 bg-accent/10 rounded-2xl flex items-center justify-center text-accent group-hover:scale-110 transition-transform duration-300">

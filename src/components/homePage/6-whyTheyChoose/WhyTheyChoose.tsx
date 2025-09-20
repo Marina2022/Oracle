@@ -18,14 +18,13 @@ const WhyTheyChoose = () => {
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Уникальное сочетание развлечения, образования и
           высоких технологий для получения точных прогнозов от искусственного интеллекта</p>
       </div>
-
       <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
         {
           whyTheyChoose.map((item, i) => <WhyTheyChooseCard key={i} item={item}/>)
         }
       </ul>
-      <MoreCapabilities />
-      <OracleVsTraditional />
+      <MoreCapabilities/>
+      <OracleVsTraditional/>
     </section>
   );
 };

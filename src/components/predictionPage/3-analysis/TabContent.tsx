@@ -1,14 +1,12 @@
 import React from 'react';
-import {ModelForDetailedPrediction, PredictionDetailed} from "@/types/predictionTypes";
+import {ModelForDetailedPrediction} from "@/types/predictionTypes";
 import {Brain, CircleCheckBig, ExternalLink} from 'lucide-react';
 import {Badge} from '@/components/ui/badge';
 import {Progress} from "@/components/ui/progress";
 import {Separator} from "@/components/ui/separator";
 
-
 const TabContent = ({model}: { model: ModelForDetailedPrediction }) => {
   return (
-
     <div className="flex-1 outline-none space-y-4 sm:space-y-6">
       <div
         className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 p-3 sm:p-4 bg-muted/30 rounded-lg">
@@ -25,7 +23,6 @@ const TabContent = ({model}: { model: ModelForDetailedPrediction }) => {
             </div>
           </div>
         </div>
-
         <div className="text-left sm:text-right ">
           <div className="text-xs sm:text-sm text-muted-foreground">Историческая точность</div>
           <div className="flex items-center gap-2">
@@ -34,7 +31,6 @@ const TabContent = ({model}: { model: ModelForDetailedPrediction }) => {
           </div>
         </div>
       </div>
-
       <div>
         <h4 className="font-medium mb-3 flex items-center gap-2 text-sm sm:text-base">
           <ExternalLink className="h-3 w-3 sm:h-4 sm:w-4"/>
@@ -51,9 +47,7 @@ const TabContent = ({model}: { model: ModelForDetailedPrediction }) => {
           }
         </ul>
       </div>
-
       <Separator/>
-
       <div>
         <h4 className="font-medium mb-3 flex items-center gap-2 text-sm sm:text-base">
           <Brain className="h-3 w-3 sm:h-4 sm:w-4"/>
@@ -79,24 +73,17 @@ const TabContent = ({model}: { model: ModelForDetailedPrediction }) => {
             )
           }
         </ul>
-
         <Separator className="my-4"/>
-
         <div>
           <h4 className="font-medium mb-3 text-sm sm:text-base">Детальный анализ</h4>
           <p className="text-xs sm:text-sm leading-relaxed text-muted-foreground">{model.detailedAnalysis}</p>
         </div>
-
         <Separator className="my-4"/>
-
         <div>
           <h4 className="font-medium mb-3 text-sm sm:text-base">Заключение</h4>
           <p className="text-xs sm:text-sm leading-relaxed">{model.resume}</p>
         </div>
-
       </div>
-
-
     </div>
   );
 };

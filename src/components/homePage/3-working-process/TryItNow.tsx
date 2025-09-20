@@ -35,7 +35,6 @@ const TryItNow = () => {
 
         <div className="space-y-3">
           <div className="text-sm text-muted-foreground mb-4">Прогнозы ИИ в реальном времени:</div>
-
           <ul className="space-y-3">
             {
               tryItNowModels.map((model, i) => <TryItNowModel key={i} model={model}/>)

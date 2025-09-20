@@ -1,7 +1,7 @@
 import React from 'react';
 import {CommentForDetailedPrediction} from "@/types/predictionTypes";
 import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar"
-import { getInitials } from '@/utils/common';
+import {getInitials} from '@/utils/common';
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {MessageCircle, ThumbsUp} from "lucide-react";
@@ -25,7 +25,6 @@ const PredictionComment = ({comment}:{comment: CommentForDetailedPrediction}) =>
           <span className="text-xs text-muted-foreground">{comment.sendingTime}</span>
         </div>
         <p className="text-sm mb-2">{comment.message}</p>
-
         <div className="flex items-center gap-4">
           <Button className="bg-transparent text-foreground shadow-none font-medium shrink-0 outline-none hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 rounded-md px-3 has-[>svg]:px-2.5 h-8 gap-1 text-xs">
             <ThumbsUp className="h-3 w-3" />

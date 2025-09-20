@@ -26,7 +26,7 @@ const ShareMenu = ({url, text = ""}: ShareMenuProps) => {
     setTimeout(() => setCopied(false), 1500)
   }
 
-    const encodedUrl = encodeURIComponent(url)
+  const encodedUrl = encodeURIComponent(url)
   const encodedText = encodeURIComponent(text)
 
   const links = {
@@ -71,7 +71,6 @@ const ShareMenu = ({url, text = ""}: ShareMenuProps) => {
   )
 
   return (
-
     <div className="flex items-center gap-3">
       {/* Telegram */}
       <a href={links.telegram} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>

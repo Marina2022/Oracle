@@ -1,12 +1,10 @@
 import React from 'react';
 import {Badge} from "@/components/ui/badge";
-import {Card} from "@/components/ui/card";
 import BasePlan from "@/components/homePage/7-pricePlan/BasePlan";
 import ProfiPlan from "@/components/homePage/7-pricePlan/ProfiPlan";
 import TeamPlan from "@/components/homePage/7-pricePlan/TeamPlan";
 import Special from "@/components/homePage/7-pricePlan/Special";
 import Faq from "@/components/homePage/7-pricePlan/Faq";
-
 
 const PricePlan = () => {
   return (

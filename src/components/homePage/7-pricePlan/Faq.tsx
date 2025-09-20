@@ -36,14 +36,12 @@ const Faq = () => {
           </li>)
         }
       </ul>
-
       <div className="text-center mt-12">
         <div className="inline-flex items-center space-x-3 bg-chart-4/10 text-chart-4 px-6 py-3 rounded-full">
           <Check className="w-5 h-5"/>
           <span>30 дней гарантии возврата средств</span>
         </div>
       </div>
-
     </div>
   );
 };

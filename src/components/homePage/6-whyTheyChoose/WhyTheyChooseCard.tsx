@@ -5,7 +5,8 @@ import {Card} from "@/components/ui/card";
 const WhyTheyChooseCard = ({item}: { item: WhyTheyChooseType }) => {
   return (
     <li>
-      <Card className="glassmorphism p-6 hover:scale-105 transition-all duration-300 hover:neon-glow group space-y-4 gap-0 flex flex-col h-full ">
+      <Card
+        className="glassmorphism p-6 hover:scale-105 transition-all duration-300 hover:neon-glow group space-y-4 gap-0 flex flex-col h-full ">
         {item.icon}
         <h3 className="text-xl font-bold mb-3">
           {item.title}
@@ -13,7 +14,6 @@ const WhyTheyChooseCard = ({item}: { item: WhyTheyChooseType }) => {
         <p className="text-muted-foreground mb-4 leading-relaxed">
           {item.text}
         </p>
-
         <ul className="space-y-2">
           {
             item.list.map((listItem, i) => <li key={i} className="flex items-center space-x-3">
