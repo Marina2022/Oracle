@@ -19,8 +19,6 @@ const YourPrediction = ({prediction}:{prediction: PredictionDetailed }) => {
   if (yourPrediction ===null || yourPrediction === true) secondBtnClass = "border bg-background text-foreground hover:bg-accent hover:text-accent-foreground dark:bg-input/30 shadow-none border-input dark:hover:bg-input/50 h-10 rounded-md px-6 has-[>svg]:px-4 gap-2 w-full sm:w-auto sm:px-8"
   if (yourPrediction ===false) secondBtnClass = "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60 h-10 rounded-md px-6 has-[>svg]:px-4 gap-2 w-full sm:w-auto sm:px-8"
 
-
-
   return (
     <Card className="p-4 sm:p-8 glassmorphism items-center">
       <Badge className="bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90 mb-2 sm:mb-4 text-xs">
@@ -53,7 +51,6 @@ const YourPrediction = ({prediction}:{prediction: PredictionDetailed }) => {
         {
           yourPrediction  !== null && <p className="text-xs sm:text-sm text-muted-foreground mt-4">Ваш голос учтен! Спасибо за участие в прогнозе.</p>
         }
-
       </div>
     </Card>
   );

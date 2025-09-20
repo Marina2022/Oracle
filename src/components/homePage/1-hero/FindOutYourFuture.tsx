@@ -1,6 +1,7 @@
 import React from 'react';
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
+import Link from 'next/link';
 
 const FindOutYourFuture = () => {
   return (
@@ -20,7 +21,11 @@ const FindOutYourFuture = () => {
         </p>
       </div>
       <div className="flex flex-col sm:flex-row gap-4 mb-7">
-        <Button variant="default" className="px-8 py-6">Начать прогнозировать</Button>
+        <Button asChild variant="default" className="px-8 py-6">
+          <Link href="/hot-prediction">
+            Начать прогнозировать
+          </Link>
+        </Button>
         <Button variant="secondary" className="px-8 py-6">Смотреть демо</Button>
       </div>
 
