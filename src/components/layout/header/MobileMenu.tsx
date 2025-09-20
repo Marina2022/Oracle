@@ -31,7 +31,7 @@ const MobileMenu = ({loggedInMenu, loggedOutMenu, isLoggedIn}: {
     <div className="2xl:hidden"> {/* прячем на больших экранах */}
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild>
-          <Button variant="ghost" size="icon">
+          <Button variant="ghost" size="icon" aria-label="Открыть меню">
             <Menu className="h-6 w-6"/>
           </Button>
         </SheetTrigger>
@@ -59,7 +59,7 @@ const MobileMenu = ({loggedInMenu, loggedOutMenu, isLoggedIn}: {
 
           {
             isLoggedIn && (
-              <nav className="mt-4 flex flex-col ">
+              <nav className="mt-4 flex flex-col" role="navigation">
                 {
                   loggedInMenu.map((item, i) => <Link
                     key={i}
@@ -88,7 +88,7 @@ const MobileMenu = ({loggedInMenu, loggedOutMenu, isLoggedIn}: {
 
           {
             !isLoggedIn && (
-              <nav className="-mt-4 flex flex-col ">
+              <nav className="-mt-4 flex flex-col" role="navigation">
                 {
                   loggedOutMenu.map((item, i) => <Link
                     key={i}

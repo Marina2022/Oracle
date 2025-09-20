@@ -2,10 +2,10 @@
 
 import React from 'react';
 import {Button} from "@/components/ui/button";
-import {ArrowLeft, Clock, Users} from "lucide-react";
+import {ArrowLeft, Eye} from "lucide-react";
 import {Badge} from "@/components/ui/badge";
 import {useRouter} from "next/navigation";
-
+import {predictions} from "@/mocks/home-page/prediction";
 
 const TopBarPredictions = () => {
   const router = useRouter()
@@ -24,16 +24,13 @@ const TopBarPredictions = () => {
           <span className="hidden sm:inline">Назад</span>
         </Button>
 
-        {/*<div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4 items-end ">*/}
-        {/*  <Badge className="gap-2 text-xs flex bg-transparent border border-border text-foreground">*/}
-        {/*    <Clock aria-hidden="true"/>*/}
-        {/*    <span>Активно до: 31 декабря 2024</span>*/}
-        {/*  </Badge>*/}
-        {/*  <Badge className="gap-2 text-xs flex">*/}
-        {/*    <Users aria-hidden="true"/>*/}
-        {/*    <span>1&nbsp;860 участников</span>*/}
-        {/*  </Badge>*/}
-        {/*</div>*/}
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4 items-end ">
+
+          <Badge className="gap-2 text-xs flex">
+            <Eye aria-hidden="true"/>
+            <span>{predictions.length} активных прогнозов</span>
+          </Badge>
+        </div>
       </div>
     </div>
   );
