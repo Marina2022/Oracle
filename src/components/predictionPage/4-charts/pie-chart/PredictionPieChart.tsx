@@ -19,7 +19,7 @@ const PredictionPieChart = ({voting}: { voting: Voting }) => {
         <Users className="h-4 w-4 sm:h-5 sm:w-5 text-primary"/>
         <span>Голосование сообщества</span>
       </div>
-      <div className="h-48 sm:h-56 mb-4 ">
+      <div className="h-48 sm:h-56 mb-4" role="region" aria-label="Диаграмма голосования">
         <ResponsiveContainer width="100%" height="100%" className="mx-auto">
           <PieChart
             margin={{top: 20, right: 20, bottom: 20, left: 20}}

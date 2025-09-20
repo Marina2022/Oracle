@@ -15,7 +15,7 @@ const PredictionBarChart = ({models}: { models: ModelForDetailedPrediction[] }) 
 
 
   return (
-    <div className="w-full h-80">
+    <div className="w-full h-80" role="region" aria-label="Диаграмма исторической точности">
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
           data={data}

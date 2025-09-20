@@ -13,7 +13,7 @@ const ComparePredictions = ({models}: {models: ModelForDetailedPrediction[]}) =>
         <span>Голосование сообщества</span>
       </div>
 
-      <ul className="space-y-4">
+      <ul className="space-y-4"  role="region" aria-label="Диаграмма сравнения уверенности моделей" >
         {
           models.map((model, i) => <li key={i} className="space-y-2" >
             <div className="flex items-center justify-between">
