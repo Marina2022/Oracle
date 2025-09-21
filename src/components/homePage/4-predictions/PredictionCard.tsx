@@ -12,6 +12,7 @@ import {Separator} from "@/components/ui/separator";
 import Link from "next/link";
 import {useRouter} from "next/navigation";
 import ShareButtons from "@/components/shared/Share";
+import {BASE_URL} from "../../../../consts";
 
 const PredictionCard = ({prediction}: { prediction: PredictionType }) => {
 
@@ -49,7 +50,7 @@ const PredictionCard = ({prediction}: { prediction: PredictionType }) => {
           <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors">{prediction.title}</h3>
           <p className="text-sm text-muted-foreground mb-5">{prediction.content}</p>
         </div>
-        <ShareButtons url={`/predictions/${prediction.id}`}/>
+        <ShareButtons url={`${BASE_URL}/predictions/${prediction.id}`}/>
       </div>
       <div className="space-y-3">
         <div className="flex items-center justify-between">
