@@ -20,7 +20,7 @@ const Predictions = ({all = false}: { all?: boolean }) => {
     <section id="predictions" className="py-20 container">
       <div className="text-center mb-16">
         <Badge className="bg-secondary/20 text-secondary border-secondary/30 mb-6 pulse-animation">● LIVE</Badge>
-        <h2 className="text-4xl lg:text-5xl font-bold mb-6 gradient-text">Актуальные прогнозы</h2>
+        <h2 className="text-4xl lg:text-5xl font-bold mb-5 gradient-text !leading-[1.3]">Актуальные прогнозы</h2>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Следите за развитием событий в реальном времени.
           ИИ-модели обновляют свои прогнозы каждые 15 минут.</p>
       </div>
