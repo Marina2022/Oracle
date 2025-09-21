@@ -24,7 +24,7 @@ const YourPrediction = ({prediction}:{prediction: PredictionDetailed }) => {
       <Badge className="bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90 mb-2 sm:mb-4 text-xs">
         {prediction.category}
       </Badge>
-      <h1 className="gradient-text text-xl sm:text-2xl lg:text-3xl xl:text-4xl">
+      <h1 className="gradient-text text-xl sm:text-2xl lg:text-3xl xl:text-4xl leading-[1.3]">
         {prediction.title}
       </h1>
       <p className="text-sm sm:text-lg text-muted-foreground max-w-3xl mx-auto text-center">

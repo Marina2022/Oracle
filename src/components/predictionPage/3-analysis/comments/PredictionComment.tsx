@@ -7,7 +7,6 @@ import {Button} from "@/components/ui/button";
 import {MessageCircle, ThumbsUp} from "lucide-react";
 
 const PredictionComment = ({comment}:{comment: CommentForDetailedPrediction}) => {
-  console.log(comment)
 
   return (
     <li className="flex gap-3 p-4 bg-muted/20 rounded-lg">
